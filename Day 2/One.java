@@ -14,7 +14,9 @@
 import java.util.*;
 public class One{
     public static void main(String[] args){
-        char a = new Scanner(System.in).nextLine().charAt(0);
+        Scanner sc = new Scanner(System.in);
+        char a = sc.nextLine().charAt(0);
         System.out.println((int)a);
+        sc.close();
     }
 }

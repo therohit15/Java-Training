@@ -1,0 +1,17 @@
+# Java class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# IDE files (for example, IntelliJ or Eclipse)
+.idea/
+*.iml
+*.ipr
+*.iws
+*.log
+target/
+bin/
+out/

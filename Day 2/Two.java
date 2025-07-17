@@ -2,9 +2,11 @@
 
 
 import java.util.*;
-class New{
+public class Two{
     public static void main(String[] args){
-        int a = new Scanner(System.in).nextInt();
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
         System.out.println((char)a);
+        sc.close();
     }
 }
