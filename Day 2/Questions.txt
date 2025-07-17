@@ -1,5 +1,4 @@
-1)
-Write a program to get a character as input and print its Unicode
+Q1. Write a program to get a character as input and print its Unicode
 value. When a character is entered, the character itself is not 
 stored. Instead, a numeric value(Unicode value) is stored.
 Sample Input :
@@ -11,7 +10,7 @@ G
 Output (stdout)
 71
 
-2)Write a program to get a number(Unicode values) as input and 
+Q2. Write a program to get a number(Unicode values) as input and 
 print its equivalent character. You can display a character if you 
 know ASCII code of that character.
 Sample Input:
@@ -24,7 +23,7 @@ Output (stdout)
 G
 
 
-3)Q3. Write a Java program to get 2 numbers from the user and 
+Q3. Write a Java program to get 2 numbers from the user and 
 calculate their sum and difference using '+' and '-' operators 
 respectively. Print the corresponding sum and difference of the 
 numbers as output in the console.
@@ -57,31 +56,24 @@ class New{
     }
 }
 
-4)Q4.Write a java program to get 2 numbers from the user and 
+Q4.Write a java program to get 2 numbers from the user and 
 swap their values without any loss of data.
-
 You can make use of additional variable for swapping.
 Print the corresponding swapped values of the two numbers as output in the console.
-
 Input format:
 First input: an integer
 Second input: an integer
-
 Output format:
 The output will be integers(swapped values)
-
 Sample Input:
 20
 10
-
 Sample Output:
 10
 20
-
 Input (stdin)
 5
 10
-
 Output (stdout)
 10
 5
