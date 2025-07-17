@@ -1,0 +1,394 @@
+1)
+Write a program to get a character as input and print its Unicode
+value. When a character is entered, the character itself is not 
+stored. Instead, a numeric value(Unicode value) is stored.
+Sample Input :
+g
+Sample Output:
+103
+Input (stdin)
+G
+Output (stdout)
+71
+
+2)Write a program to get a number(Unicode values) as input and print its equivalent character. You can display a character if you know ASCII code of that character.
+
+
+Sample Input:
+
+103
+
+Sample Output:
+
+g
+Input (stdin)
+71
+
+Output (stdout)
+G
+
+import java.util.*;
+class New{
+    public static void main(String[] args){
+        int a = new Scanner(System.in).nextInt();
+        System.out.println((char)a);
+    }
+}
+
+3)Q3. Write a Java program to get 2 numbers from the user and calculate 
+their sum and difference using '+' and '-' operators respectively. 
+Print the corresponding sum and difference of the numbers as output in the console.
+
+Input format:
+First input: an integer
+Second input: an integer
+
+Output format:
+First output will be the sum of two integers
+Second output will be the difference of two integers
+
+Sample Input:
+55
+34
+
+Sample Output:
+89
+21
+
+Input (stdin)
+20
+10
+
+
+Output (stdout)
+30
+10
+
+import java.util.*;
+class New{
+    public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+	int b = sc.nextInt();
+        System.out.printf("%d %d",a+b,a-b);
+    }
+}
+
+4)Q4.Write a java program to get 2 numbers from the user and 
+swap their values without any loss of data.
+
+You can make use of additional variable for swapping.
+Print the corresponding swapped values of the two numbers as output in the console.
+
+Input format:
+First input: an integer
+Second input: an integer
+
+Output format:
+The output will be integers(swapped values)
+
+Sample Input:
+20
+10
+
+Sample Output:
+10
+20
+
+Input (stdin)
+5
+10
+
+Output (stdout)
+10
+5
+
+import java.util.*;
+class New{
+    public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+	int b = sc.nextInt();
+	int temp = a;
+	a = b;
+	b= temp;
+        System.out.printf("%d %d",a,b);
+    }
+}
+
+5)
+
+import java.util.*;
+class New{
+    public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+	int b = sc.nextInt();
+	a = a + b;
+	b = a - b;
+	a = a - b;
+        System.out.printf("%d %d",a,b);
+    }
+}
+
+
+import java.util.*;
+class New{
+    public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+	int b = sc.nextInt();
+	a = a * b;
+	b = a / b;
+	a = a / b;
+        System.out.printf("%d %d",a,b);
+    }
+}
+
+import java.util.*;
+class New{
+    public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+	int b = sc.nextInt();
+	a = a ^ b;
+	b = a ^ b;
+	a = a ^ b;
+        System.out.printf("%d %d",a,b);
+    }
+}
+
+
+6. Sheela has three things in her bag. She wants to compute the area of 3 things but 3 things are in different shapes.
+
+The three things are in a square shape, rectangular shape, and circular shape respectively. 
+
+Write a program to help Sheela to calculate the area of different shapes.
+
+Input format:
+First input: a side of a square in integer
+Second input: length of a rectangle in integer
+Third input: breadth of a rectangle in integer
+Fourth input: radius of a circle in float
+
+Output format:
+The first output should be the area of a square in integer
+The second output should be the area of a rectangle in integer
+The third output should be the area of a circle in float with 2 decimal places
+
+Sample Input:
+5
+5
+4
+2.0
+
+Sample Output:
+25
+20
+12.56
+
+Input (stdin)
+2
+3
+6
+5.0
+
+Output (stdout)
+4
+18
+78.50
+
+
+import java.util.;
+import java.lang.Math;
+public class Main
+{
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int a = sc.nextInt();
+sc.nextLine();
+int b = sc.nextInt();
+sc.nextLine();
+int c = sc.nextInt();
+sc.nextLine();
+float r = sc.nextFloat();
+int square = aa;
+int rectangle = cb;
+float circle = (float)Math.PIr*r;
+System.out.println(square);
+System.out.println(rectangle);
+System.out.printf("%.2f",circle);
+}
+}
+
+7. Q7.
+The college ground is rectangular in shape. Management decides to build a fence around the ground.
+
+In order to help the construction workers to build a straight fence, they planned to place a thick rope around the ground.
+
+They wanted to buy only the exact length of the rope that is needed.
+
+They also wanted to cover the entire ground with a thick carpet during the rainy season.
+
+They wanted to buy only the exact quantity of carpet that is needed. They requested your help.
+
+ Can you please help them by writing a program to find the exact length of the rope and the exact quantity
+
+of carper that is required?
+
+
+Input Format:
+Input consists of 2 integers.
+The first integer corresponds to the length of the ground
+The second integer corresponds to the breadth of the ground.
+
+Output Format:
+Output consists of 2 integers.
+The first integer corresponds to the exact length of the rope
+The second integer corresponds to the exact quantity of carper.
+
+Sample Input:
+50
+20
+
+Sample Output:
+140m
+1000sqm
+
+Input (stdin)
+80
+20
+
+
+Output (stdout)
+200m
+1600sqm
+
+
+import java.util.;
+import java.lang.Math;
+public class Main
+{
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int a = sc.nextInt();
+sc.nextLine();
+int b = sc.nextInt();
+int area = ab;
+int peri = 2*(a+b);
+System.out.println(area+" m");
+System.out.println(peri+" sqm");
+}
+}
+
+8. Q8
+During the Physical Education hour, PT sir has decided to conduct some team games.
+
+He wants to split the students in the class into equal-sized teams.
+
+In some cases, there may be some students who are left out from teams and he wanted to use the left out,
+
+ students, to assist him in conducting the team games. For instance, if there are 50 students in the class and
+
+if the class has to be divided into 7 equal-sized teams, 7 students will be there in each team and 1 student will be left out.
+
+ PT sir asks your help to automate this team splitting task. Can you please help him out?
+
+
+Input Format:
+Input consists of 2 integers.
+The first integer corresponds to the number of students in the class.
+The second integer corresponds to the number of teams.
+
+ 
+
+Output Format:
+Output consists of 2 integers.
+The first integer corresponds to the number of students in the each team.
+The second integer corresponds to the remaining students.
+
+Sample Input:
+60
+8
+
+Sample Output:
+The number of students in each team is 7 and left out is 4
+Input (stdin)
+40
+6
+
+Output (stdout)
+The number of students in each team is 6 and left out is 4
+
+Input (stdin)
+80
+3
+
+Output (stdout)
+The number of students in each team is 26 and left out is 2
+
+
+import java.util.*;
+public class Main
+{
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int a = sc.nextInt();
+sc.nextLine();
+int b = sc.nextInt();
+int team = a/b;
+int rem = a%b;
+System.out.printf("The number of students in each team is %d and left out is %d",team,rem);
+}
+}
+
+9. Q9
+Each Sunday, a newspaper agency sells x copies of a certain newspaper for Rs.a per copy.
+
+The cost to the agency of each newspaper is Rs.b. The agency pays a fixed cost for storage,
+
+delivery and so on of Rs.100 per Sunday. The newspaper agency wants to calculate the profit obtained on Sundays.
+
+ Can you please help them out by writing a program to compute the profit given x, a and b.
+
+
+Input Format:
+Input consists of 3 integers --- x, a and b.
+X is the number of copies sold, a is the cost per copy and b is the cost the agency spends per copy.
+
+Output Format:
+Refer Sample Input and Output for exact formatting specifications.
+
+Sample Input:
+1000
+2
+1
+
+Sample Output:
+The profit obtained is Rs.900
+
+Input (stdin)
+300
+2
+1
+
+Output (stdout)
+The profit obtained is Rs.200
+
+
+import java.util.;
+public class Main
+{
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int a = sc.nextInt();
+sc.nextLine();
+int b = sc.nextInt();
+sc.nextLine();
+int c = sc.nextInt();
+int sell = ab;
+int spend = a*c;
+int profit= (sell-spend)-100;
+System.out.printf("The profit obtained is %d",profit);
+}
+}
