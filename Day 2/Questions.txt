@@ -217,21 +217,3 @@ Input (stdin)
 1
 Output (stdout)
 The profit obtained is Rs.200
-
-
-import java.util.;
-public class Main
-{
-public static void main(String[] args) {
-Scanner sc = new Scanner(System.in);
-int a = sc.nextInt();
-sc.nextLine();
-int b = sc.nextInt();
-sc.nextLine();
-int c = sc.nextInt();
-int sell = ab;
-int spend = a*c;
-int profit= (sell-spend)-100;
-System.out.printf("The profit obtained is %d",profit);
-}
-}
