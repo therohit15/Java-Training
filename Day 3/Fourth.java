@@ -53,7 +53,8 @@ public class Fourth{
         int r2 = sc.nextInt();
         sc.nextLine();
         int x = sc.nextInt();
-        int add = (int)Math.ceil(x/60) - n;
+        int add = (int)Math.ceil(x/60.) - n;
+        if(add<=n)System.out.println(n*r1);
         System.out.println((r1 * n)+(r2 * add));
         sc.close();
     }
