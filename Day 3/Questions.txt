@@ -147,3 +147,9 @@ Total travelling hours = 500÷60=8.33 hours. The ceiling of 8.33 is 9 hours.
 Rupees 30/hour for the first 5 hours: 30×5=150 rupees.
 Rupees 35/hour for the remaining 4 hours: 35×4=140 rupees.
 Total cost = 150+140=290 rupees.
+
+
+
+
+Q5.
+Write a java program to print the given number is even or odd without using % Operator
