@@ -44,6 +44,6 @@ public class One{
         int tem = sc.nextInt();
         if(tem>0) System.out.println("Safe for outdoor activities");
         else System.out.println("Too cold for outdoor activities");
-        sc.close()
+        sc.close();
     }
 }
