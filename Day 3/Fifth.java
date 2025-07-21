@@ -16,6 +16,7 @@ public class Fifth{
         System.out.println((n==n>>1<<1)?"Even":"Odd");
         //Fifth way
         while(n>=2){
+             
             n=n-2;
         }
         System.out.println(n==0?"Even":"Odd");
