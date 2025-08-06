@@ -1,0 +1,8 @@
+Input formats:
+    Three inputs
+    First and second inputs can be float/int/boolean
+    Third input can be +(Sum),-(Sub),*(Mul),/(Div),^(XOR),%(Rem)
+
+Output formats:
+    Print Invalid if third input is other than condition
+    Print Operation name : Result
