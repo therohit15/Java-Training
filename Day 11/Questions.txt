@@ -1,0 +1,73 @@
+Q1)
+Write a program to change the given string to uppercase without using string library functions
+Input Format:
+Input consist of 1 string.
+Sample Input:
+good
+Sample Output:
+GOOD
+Input (stdin)
+good
+Output (stdout)
+GOOD
+
+Q2)
+In the certain area there was a camp of polio drops team. They need to search every baby in
+the particular area. They want to find the baby and take out the baby for polio drops. Help
+them to find the baby to avoid polio attacks. (remove the occurrence of “the” word from
+entered string). [Hint: To get a whole sentence use the following statement: scanf("%[^\n]",a);]
+Input Format:
+Input consists of a string.
+Output Format:
+remove "the" occurrence of the word from entered string.
+Sample Input:
+the height of the Mt.Everest is 8448 m.
+Sample Output:
+height of Mt.Everest is 8448 m.
+Input (stdin)
+the height of Mt.Everest is 8448 m.
+Output (stdout)
+height of Mt.Everest is 8448 m.
+
+3)
+Write a program to compute the frequency of each lowercase letter in the string.
+Input Format:
+Input consists of a string. Assume that all characters in the string are lowercase 
+letters and the maximum length of the string is 200.
+Output Format:
+The letters are displayed sorted in ascending order.
+Sample Input:
+anitha
+Sample Output:
+a 2
+
+h 1
+
+i 1
+
+n 1
+
+t 1
+Input (stdin)
+google
+Output (stdout)
+e1
+g2
+l1
+o2
+
+
+Q5)
+Write a program to determine whether a given string is palindrome or not.
+Input Format :
+Input consist of a String
+Output Format :
+Output consist of a String
+Sample Input :
+Live on time emit no evil
+Sample Output :
+Palindrome
+Input (stdin)
+Doctor
+Output (stdout)
+Not a palindrome
