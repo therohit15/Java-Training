@@ -1,0 +1,192 @@
+q1)
+
+UseCase-1
+Unique Batsmen Tracker using HashSet in Java
+
+In the heart of a bustling cricket stadium, an exciting match is underway. The commentary is vibrant, the crowd is roaring, and players 
+from both teams are getting ready to bat. But here’s a twist — you are the score analyst and your task is to keep track of all the batsmen who walk onto the pitch.
+
+Every time a batsman comes out to bat, his name is noted down. However, due to multiple innings, super overs, or rain-affected replayed 
+matches, the same player might bat more than once. You don’t want to count him multiple times — you want to know: *how many unique batsmen* actually played in the match?
+
+To solve this, you use a HashSet in Java.
+
+HashSet is perfect here because:
+- It automatically removes duplicates.
+- It stores only unique values.
+- It provides fast access and storage.
+
+Constraints:
+- Accept number of entries from the user.
+- Accept batsman names (may have duplicates).
+- Convert names to lowercase to handle case sensitivity.
+- Store names in a HashSet.
+- Finally, print the size of the HashSet — which gives the number of unique batsmen.
+
+Input Format:
+First line: An integer N (number of batsman entries)  
+Next N lines: Each line contains a batsman's name
+
+Output Format:
+Print the number of unique batsmen
+
+Sample Input:
+6  
+Virat  
+Rohit  
+Virat  
+Dhoni  
+Rohit  
+Pant  
+
+Output:
+4
+
+Bonus Logic:
+You can also enhance the program to:
+- Handle case sensitivity (e.g., Virat vs virat)
+- Display the sorted list of players (using TreeSet)
+- Count how many times each player batted (using HashMap)
+
+This simple scenario teaches us how powerful and useful collections like HashSet can be in Java when solving real-world problems like tracking players in a cricket match!
+
+Test case -1
+4
+Gill
+Gill
+Gill
+Gill
+
+Output-1
+1
+Input-1
+7
+Sachin
+Sourav
+Rahul
+Sachin
+Rahul
+Sehwag
+Dhoni
+
+Output-2
+5
+Test case -3
+Input:
+3
+Raina
+raina
+RAINA
+
+Output:
+1
+
+test case -4
+Input:
+0
+
+Output:
+0
+
+
+
+q2)
+
+UseCASE-2
+Write a Java program to:
+1.	Accept the marks of N students.
+2.	Store the marks in an ArrayList.
+3.	Perform the following 4 operations:
+Operations:
+1.	Display all student marks.
+2.	Convert each mark to a grade based on Anna University rules.
+3.	Update a student's mark at a given index (e.g., after revaluation).
+4.	Sort and display the marks in ascending order.
+________________________________________
+ Anna University Grading System:
+Marks	Grade
+90 - 100	O
+80 - 89	A+
+70 - 79	A
+60 - 69	B+
+50 - 59	B
+Below 50	RA
+________________________________________
+ Input Format:
+mathematica
+CopyEdit
+First line: Integer N (number of students)
+Next N lines: Marks of each student (0–100)
+(Optional) Update: Index and new mark (for revaluation)
+ Output Format:
+•	Marks List
+•	Corresponding Grades
+•	Updated List (if any)
+•	Sorted List
+________________________________________
+Test Case 1
+Input:
+5
+95
+82
+67
+58
+43
+Output:
+less
+
+Grades: [O, A+, B+, B, RA]
+Sorted: [43, 58, 67, 82, 95]
+________________________________________
+Test Case 2 (With Update)
+Input:
+pgsql
+CopyEdit
+4
+76
+49
+88
+67
+Update index 1 to 55
+Output:
+Original: [76, 49, 88, 67]
+Updated: [76, 55, 88, 67]
+Grades: [A, B, A+, B+]
+Sorted: [55, 67, 76, 88]
+Test Case 3
+100
+100
+100
+Output:
+less
+Marks: [100, 100, 100]
+Grades: [O, O, O]
+Sorted: [100, 100, 100]
+________________________________________
+ Test Case 4 (Edge Values)
+Input:
+6
+90
+89
+70
+60
+50
+49
+Output:
+less
+
+Marks: [90, 89, 70, 60, 50, 49]
+Grades: [O, A+, A, B+, B, RA]
+Sorted: [49, 50, 60, 70, 89, 90]
+________________________________________
+🎓 Final Note:
+This simple Java program using ArrayList can be the backbone of a grading system for colleges. You’ve built:
+•	A dynamic mark collector
+•	A grading converter
+•	A mark updater
+•	A rank viewer
+All using just one Java collection — ArrayList.
+
+q3)
+
+game

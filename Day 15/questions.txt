@@ -1,0 +1,186 @@
+q1)
+
+USECASE
+In the bustling streets of Hyderabad, there was a famous flower market managed by Meera. She kept track of all her flowers — Roses, Jasmine, and Lotus 
+— in a magical list called a Vector. One fine morning, she got a fresh stock of Lily and quickly added it to her inventory. Later, a customer requested 
+that Lotus should appear right after Jasmine, so she inserted it at the correct spot. A florist came and told Meera that “Orchid” sounded more appealing 
+than “Rose” for her bouquet, so she updated the name at the first position. By afternoon, a buyer asked for Jasmine, but since it had already been sold, 
+Meera removed it from the Vector. Curious about her stock, she searched for “Lily” and happily found it still available. Before closing the shop, she 
+displayed all her remaining flowers, counted them, and even checked which flower was at the second position. The Vector had helped Meera keep her market 
+perfectly organized throughout the day.
+
+Input Format
+First line: An integer n — the number of initial flowers.
+Second line: n flower names separated by spaces.
+Third line: An integer q — the number of operations to perform.
+Next q lines: Each line contains an operation in one of the following formats:
+ADD flowerName
+INSERT index flowerName
+UPDATE index flowerName
+REMOVE flowerName
+SEARCH flowerName
+DISPLAY
+COUNT
+RETRIEVE index
+
+Output Format
+For SEARCH: Output "Found" or "Not Found".
+For DISPLAY: Print the flowers separated by spaces.
+For COUNT: Print the total number of flowers.
+For RETRIEVE: Print the flower at the given index.
+No output for ADD, INSERT, UPDATE, or REMOVE unless the operation affects a later query.
+
+Constraints
+1 ≤ n ≤ 20
+1 ≤ q ≤ 50
+Flower names are strings without spaces.
+Index values are 0-based.
+If index is invalid, ignore the operation.
+Removal of a non-existing flower has no effect.
+
+Test Cases
+Test Case 1
+Input
+3
+Rose Jasmine Lotus
+6
+ADD Lily
+INSERT 1 Orchid
+UPDATE 0 Tulip
+REMOVE Jasmine
+SEARCH Lily
+DISPLAY
+
+Output
+Found
+Tulip Orchid Lotus Lily
+
+Test Case 2
+Input
+4
+Rose Jasmine Lily Lotus
+5
+SEARCH Orchid
+ADD Orchid
+SEARCH Orchid
+COUNT
+DISPLAY
+
+Output
+Not Found
+Found
+5
+Rose Jasmine Lily Lotus Orchid
+
+Test Case 3
+Input
+2
+Rose Lotus
+7
+ADD Jasmine
+ADD Lily
+RETRIEVE 2
+UPDATE 2 Orchid
+DISPLAY
+REMOVE Rose
+COUNT
+
+Output
+Jasmine
+Rose Lotus Orchid Lily
+3
+
+
+
+q2)
+
+USECASE
+At Greenwood University, the Dean is preparing the official Merit List for the Annual Academic Awards Ceremony.
+Every year, hundreds of students apply, but the Dean only considers unique scores and always displays them in ascending order so that top performers shine at the top.
+The Dean’s assistant, Rahul, is tasked with managing the scores. He uses a magical register (in our case, a TreeSet) that automatically removes duplicates, keeps scores 
+sorted, and finds ranks instantly.
+One day, a student withdraws, and Rahul must remove their score. Another student calls to check whether their score appears in the merit list. The Dean then asks Rahul 
+to find the highest and lowest scores, and also see which score is just above and below a specific student’s score. Finally, the Dean wants to display only those scores 
+that fall within a given range before clearing the register for the next year.
+
+Your task is to help Rahul manage the list using a TreeSet and perform all these operations efficiently.
+
+Input Format
+n → number of scores
+a1 a2 ... an → the scores (may contain duplicates)
+removeScore → score to be removed from the TreeSet
+checkScore → score to check if present
+specificScore → score used for lower() and higher() operations
+rangeStart rangeEnd → start and end values for subset() operation (inclusive)
+
+Output Format
+Initial Merit List: <TreeSet after adding scores>
+After Removing <removeScore>: <TreeSet after removal>
+Is <checkScore> present? <true/false>
+Lowest Score: <value>
+Highest Score: <value>
+Score just below <specificScore>: <value or null>
+Score just above <specificScore>: <value or null>
+Scores in range <rangeStart> to <rangeEnd>: <subset TreeSet>
+Final Merit List after clearing: []
+
+
+Test Case 1
+Input:
+7
+85 92 76 85 90 88 95
+88
+90
+92
+85 92
+
+Output:
+Initial Merit List: [76, 85, 88, 90, 92, 95]
+After Removing 88: [76, 85, 90, 92, 95]
+Is 90 present? true
+Lowest Score: 76
+Highest Score: 95
+Score just below 92: 90
+Score just above 92: 95
+Scores in range 85 to 92: [85, 90, 92]
+Final Merit List after clearing: []
+
+Test Case 2
+Input:
+5
+50 75 60 75 80
+75
+100
+75
+60 80
+
+Output:
+Initial Merit List: [50, 60, 75, 80]
+After Removing 75: [50, 60, 80]
+Is 100 present? false
+Lowest Score: 50
+Highest Score: 80
+Score just below 75: 60
+Score just above 75: 80
+Scores in range 60 to 80: [60, 80]
+Final Merit List after clearing: []
+
+Test Case 3
+Input:
+6
+45 55 65 75 85 95
+45
+55
+75
+50 90
+
+Output:
+Initial Merit List: [45, 55, 65, 75, 85, 95]
+After Removing 45: [55, 65, 75, 85, 95]
+Is 55 present? true
+Lowest Score: 55
+Highest Score: 95
+Score just below 75: 65
+Score just above 75: 85
+Scores in range 50 to 90: [55, 65, 75, 85]
+Final Merit List after clearing: []

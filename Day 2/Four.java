@@ -31,6 +31,8 @@ public class Four{
 	    b= temp;
         System.out.printf("%d %d",a,b);
         sc.close();
+        TreeSet<Integer> set = new TreeSet<>();
+        set.
     }
 }
 
