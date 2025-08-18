@@ -135,6 +135,7 @@ public class One {
         int n = sc.nextInt();
         if (n < 1 || n > 20) {
             System.out.println("Invalid input: Number of entries must be between 1 and 20.");
+            sc.close();
             return;
         }
 
@@ -145,10 +146,12 @@ public class One {
 
             if (centuries < 0) {
                 System.out.println("Invalid input: Centuries or wickets cannot be negative.");
+                sc.close();
                 return;
             }
             if (batsmen.containsKey(name)) {
                 System.out.println("Invalid input: Duplicate player names are not allowed.");
+                sc.close();
                 return;
             }
             batsmen.put(name, centuries);
@@ -157,6 +160,7 @@ public class One {
         int m = sc.nextInt();
         if (m < 1 || m > 20) {
             System.out.println("Invalid input: Number of entries must be between 1 and 20.");
+            sc.close();
             return;
         }
 
@@ -167,22 +171,24 @@ public class One {
 
             if (wickets < 0) {
                 System.out.println("Invalid input: Centuries or wickets cannot be negative.");
+                sc.close();
                 return;
             }
             if (bowlers.containsKey(name)) {
                 System.out.println("Invalid input: Duplicate player names are not allowed.");
+                sc.close();
                 return;
             }
             bowlers.put(name, wickets);
         }
 
-        // Read update command
         System.out.print("Update ");
         String updateName = sc.next();
         int extraCenturies = sc.nextInt();
 
         if (!batsmen.containsKey(updateName)) {
             System.out.println("Player not found");
+            sc.close();
             return;
         } else {
             batsmen.put(updateName, batsmen.get(updateName) + extraCenturies);
@@ -193,6 +199,7 @@ public class One {
 
         if (!bowlers.containsKey(removeName)) {
             System.out.println("Player does not exist.");
+            sc.close();
             return;
         } else {
             bowlers.remove(removeName);
@@ -210,7 +217,6 @@ public class One {
             }
         }
 
-        // Print after changes
         System.out.println("\nAfter Update and Removal:\n");
         System.out.println("Batsmen:");
         for (Map.Entry<String, Integer> entry : batsmen.entrySet()) {
